@@ -10,7 +10,7 @@ public class SistemaLoginTest {
     public void deveAutenticarUtilizadorValido(){
         SistemaLogin login = new SistemaLogin();
 
-        boolean resultado = login.autenticar("admin","login@1234");
+        boolean resultado = login.autenticar("admin","8976");
         assertTrue(resultado);
     }
 
@@ -18,7 +18,7 @@ public class SistemaLoginTest {
     public void deveRejeitarUtilizadorInvalidor(){
         SistemaLogin login = new SistemaLogin();
 
-        boolean resultado= login.autenticar("user","0000");
+        boolean resultado= login.autenticar("user","9999");
         assertFalse(resultado);
     }
 
